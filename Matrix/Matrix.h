@@ -37,7 +37,16 @@ public:
             printf("SIZE MISMATCH!!!");
             return;
         }
+        else if(arr == NULL){
+            printf("NOT INITIALIZED!!!");
+            return;
+        }
+
         for (int i = 0; i < n; i++) {
+            if (arr[i] == NULL){
+                printf("NOT INITIALIZED!!!");
+                return;
+            }
             for (int j = 0; j < m; ++j) {
                 arr[i][j] = new_arr[i][j];
             }
@@ -58,7 +67,7 @@ public:
         }
         Matrix<T> result(n, m);
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; ++j) {
+            for (int j = 0; j < m; j++) {
                 result.arr[i][j] = arr[i][j] + obj.arr[i][j];
             }
         }
@@ -72,7 +81,7 @@ public:
         }
         Matrix<T> result(n, m);
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; ++j) {
+            for (int j = 0; j < m; j++) {
                 result.arr[i][j] = arr[i][j] - obj.arr[i][j];
             }
         }
@@ -83,7 +92,7 @@ public:
     Matrix operator + (T const &val) {
         Matrix<T> result(n, m);
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; ++j) {
+            for (int j = 0; j < m; j++) {
                 result.arr[i][j] = arr[i][j] + val;
             }
         }
@@ -93,7 +102,7 @@ public:
     Matrix operator - (T const &val) {
         Matrix<T> result(n, m);
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; ++j) {
+            for (int j = 0; j < m; j++) {
                 result.arr[i][j] = arr[i][j] - val;
             }
         }
@@ -104,20 +113,20 @@ public:
         n = obj.n;
         m = obj.m;
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; ++j) {
+            for (int j = 0; j < m; j++) {
                 arr[i][j] = obj.arr[i][j];
             }
         }
     }
 
-    Matrix operator * (Matrix const &obj) {     //matrix multiplication
+    Matrix operator * (Matrix const &obj) {     //matrix multiplication NOT DONE
         if(m != obj.n){
             printf("SIZE MISMATCH!!!");
             exit(1);
         }
-        Matrix<T> result(n, m);
+        Matrix<T> result(n, obj.m);
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; ++j) {
+            for (int j = 0; j < obj.m; j++) {
                 result.arr[i][j] = arr[i][j] + obj.arr[i][j];
             }
         }
@@ -128,7 +137,7 @@ public:
     Matrix operator * (T const &val) {     //scalar multiplication
         Matrix<T> result(n, m);
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; ++j) {
+            for (int j = 0; j < m; j++) {
                 result.arr[i][j] = arr[i][j] * val;
             }
         }
@@ -139,7 +148,7 @@ public:
     Matrix operator / (T const &val) {     //scalar division
         Matrix<T> result(n, m);
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; ++j) {
+            for (int j = 0; j < m; j++) {
                 result.arr[i][j] = arr[i][j] / val;
             }
         }
@@ -156,7 +165,7 @@ public:
         }
         Matrix<T> result(n, m);
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; ++j) {
+            for (int j = 0; j < m; j++) {
                 result.arr[i][j] = arr[i][j] * obj.arr[i][j];
             }
         }
@@ -164,11 +173,19 @@ public:
         return result;
     }
 
+    T getTrace(){
+        T val = 0;
+        for (int i = 0; i < n; i++) {
+            val += arr[i][i];
+        }
+        return val;
+    }
+
 
     void printMatrix(){
         printf("\n");
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; ++j) {
+            for (int j = 0; j < m; j++) {
                 //printf("%f ", arr[i][j]);
                 std::cout << arr[i][j] << " ";
             }

@@ -14,23 +14,30 @@ int main() {
 
     Matrix<double> A(3, 3);
 
-    Matrix<double> B(3, 4);
+    Matrix<double> B(3, 3);
 
-    A.setVal(0, 0, 5);
+    A.setVal(2, 2, 5);
+    A.setVal(1, 1, 2);
+
     B.setVal( 1, 2, 9);
 
     Matrix<double > C = A+B-7.5;
 
-    int tempArr[3][3];
+    C.printMatrix();
+
+    double **tempArr = new double *[3];
     for (int i = 0; i < 3; ++i) {
+        tempArr[i] = new double[3];
         for (int j = 0; j < 3; ++j) {
             tempArr[i][j] = i+j;
         }
     }
-
-//    C.setValues(3, 3, (int **)tempArr);
+    C.setValues(3, 3, tempArr);
 
     C.printMatrix();
+
+    B = C.elementWiseProduct(A*5);
+    B.printMatrix();
 
 
 
