@@ -32,6 +32,19 @@ public:
         delete []arr;
     }
 
+    Matrix(const Matrix& obj){
+        n = obj.n;
+        m = obj.m;
+
+        arr = new T *[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = new T[m];
+            for (int j = 0; j < m; j++) {
+                arr[i][j] = obj.arr[i][j];
+            }
+        }
+    }
+
     void setValues(int new_n, int new_m, T** new_arr){
         if(n!=new_n || m!=new_m){
             printf("SIZE MISMATCH!!!");
