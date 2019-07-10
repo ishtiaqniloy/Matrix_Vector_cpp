@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Drive/Projects/CLion/Matrix_Implementation_cpp/Matrix/Matrix.h
+cstdio
+-
+iostream
+-
+
+D:/Drive/Projects/CLion/Matrix_Implementation_cpp/Matrix/main.cpp
+cstdio
+-
+cstring
+-
+cstdlib
+-
+cmath
+-
+Matrix.h
+D:/Drive/Projects/CLion/Matrix_Implementation_cpp/Matrix/Matrix.h
+
