@@ -36,9 +36,20 @@ int main() {
 
     C.printMatrix();
 
-    B = C.elementWiseProduct(A*5);
+//    B = C.elementWiseProduct(A*5);
+//    B.printMatrix();
+
+    for (int i = 0; i < 3; ++i) {
+        tempArr[i] = new double[3];
+        for (int j = 0; j < 3; ++j) {
+            tempArr[i][j] = i*j+i+j;
+        }
+    }
+    B.setValues(3, 3, tempArr);
+
     B.printMatrix();
 
+    (C*B).printMatrix();
 
 
     return 0;

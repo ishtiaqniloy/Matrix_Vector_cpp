@@ -127,7 +127,11 @@ public:
         Matrix<T> result(n, obj.m);
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < obj.m; j++) {
-                result.arr[i][j] = arr[i][j] + obj.arr[i][j];
+                T val = 0;
+                for (int k = 0; k < m; k++) {
+                    val += arr[i][k] * obj.arr[k][j];
+                }
+                result.arr[i][j] = val;
             }
         }
 
