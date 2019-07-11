@@ -12,7 +12,7 @@ class Matrix{
     int m;
 
 public:
-    Matrix(int n_var, int m_var){
+    Matrix(int n_var, int m_var, bool initializeIdentity = false){
         n = n_var;
         m = m_var;
 
@@ -23,6 +23,13 @@ public:
                 arr[i][j] = 0;
             }
         }
+
+        if(initializeIdentity){
+            for (int i = 0; i < n && i < m; i++) {
+                arr[i][i] = 1;
+            }
+        }
+
     }
 
     ~Matrix(){
