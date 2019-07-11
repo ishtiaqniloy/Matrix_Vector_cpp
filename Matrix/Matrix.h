@@ -83,6 +83,13 @@ public:
         arr[i][j] = val;
     }
 
+    T getVal(int i, int j){
+        if(i >= n || j >= m){
+            return;
+        }
+        return arr[i][j];
+    }
+
     Matrix operator + (Matrix const &obj) {
         if(n != obj.n || m != obj.m){
             printf("SIZE MISMATCH!!!");
