@@ -77,6 +77,9 @@ public:
         if(i >= n || j >= m){
             return;
         }
+        else if(val == -0){
+            val = 0;
+        }
         arr[i][j] = val;
     }
 
