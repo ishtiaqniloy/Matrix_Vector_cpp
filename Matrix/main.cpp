@@ -12,9 +12,9 @@ int main() {
 
     printf("Hello World\n");
 
-    Matrix<double> A(3, 3);
+    Matrix<double> A(4, 4);
 
-    Matrix<double> B(3, 3);
+    Matrix<double> B(4, 4);
 
     A.setVal(2, 2, 5);
     A.setVal(1, 1, 2);
@@ -25,27 +25,27 @@ int main() {
 
     C.printMatrix();
 
-    double **tempArr = new double *[3];
-    for (int i = 0; i < 3; ++i) {
-        tempArr[i] = new double[3];
-        for (int j = 0; j < 3; ++j) {
+    double **tempArr = new double *[4];
+    for (int i = 0; i < 4; ++i) {
+        tempArr[i] = new double[4];
+        for (int j = 0; j < 4; ++j) {
             tempArr[i][j] = i+j;
         }
     }
-    C.setValues(3, 3, tempArr);
+    C.setValues(4, 4, tempArr);
 
     C.printMatrix();
 
 //    B = C.elementWiseProduct(A*5);
 //    B.printMatrix();
 
-    for (int i = 0; i < 3; ++i) {
-        tempArr[i] = new double[3];
+    for (int i = 0; i < 4; ++i) {
+        tempArr[i] = new double[4];
         for (int j = 0; j < 3; ++j) {
             tempArr[i][j] = i*j+i+j;
         }
     }
-    B.setValues(3, 3, tempArr);
+    B.setValues(4, 4, tempArr);
 
     B.printMatrix();
 

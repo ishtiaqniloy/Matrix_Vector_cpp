@@ -132,7 +132,7 @@ public:
         }
     }
 
-    Matrix operator * (Matrix const &obj) {     //matrix multiplication NOT DONE
+    Matrix operator * (Matrix const &obj) {     //computationally inefficient matrix multiplication
         if(m != obj.n){
             printf("SIZE MISMATCH!!!");
             exit(1);
@@ -192,7 +192,7 @@ public:
 
     T getTrace(){
         T val = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n && i < m; i++) {
             val += arr[i][i];
         }
         return val;
