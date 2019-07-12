@@ -52,6 +52,17 @@ public:
         }
     }
 
+
+    Matrix getCopy(){
+        Matrix<T> result(n, m);
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                result.arr[i][j] = arr[i][j];
+            }
+        }
+        return result;
+    }
+
     void setValues(int new_n, int new_m, T** new_arr){
         if(n!=new_n || m!=new_m){
             printf("SIZE MISMATCH!!!");
@@ -89,6 +100,8 @@ public:
         }
         return arr[i][j];
     }
+
+
 
     Matrix operator + (Matrix const &obj) {
         if(n != obj.n || m != obj.m){
