@@ -58,45 +58,45 @@ RM = C:\Users\Ishti\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\191.6707.69\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Drive\Projects\CLion\Matrix_Implementation_cpp\Matrix
+CMAKE_SOURCE_DIR = D:\Drive\Projects\CLion\Matrix_Vector_cpp\Matrix_Vector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Drive\Projects\CLion\Matrix_Implementation_cpp\Matrix\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Drive\Projects\CLion\Matrix_Vector_cpp\Matrix_Vector\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/Matrix.dir
+# Target rules for target CMakeFiles/Matrix_Vector.dir
 
 # All Build rule for target.
-CMakeFiles/Matrix.dir/all:
-	$(MAKE) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/depend
-	$(MAKE) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Drive\Projects\CLion\Matrix_Implementation_cpp\Matrix\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Matrix"
-.PHONY : CMakeFiles/Matrix.dir/all
+CMakeFiles/Matrix_Vector.dir/all:
+	$(MAKE) -f CMakeFiles\Matrix_Vector.dir\build.make CMakeFiles/Matrix_Vector.dir/depend
+	$(MAKE) -f CMakeFiles\Matrix_Vector.dir\build.make CMakeFiles/Matrix_Vector.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Drive\Projects\CLion\Matrix_Vector_cpp\Matrix_Vector\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Matrix_Vector"
+.PHONY : CMakeFiles/Matrix_Vector.dir/all
 
 # Include target in all.
-all: CMakeFiles/Matrix.dir/all
+all: CMakeFiles/Matrix_Vector.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Matrix.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Drive\Projects\CLion\Matrix_Implementation_cpp\Matrix\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Matrix.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Drive\Projects\CLion\Matrix_Implementation_cpp\Matrix\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/Matrix.dir/rule
+CMakeFiles/Matrix_Vector.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Drive\Projects\CLion\Matrix_Vector_cpp\Matrix_Vector\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Matrix_Vector.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Drive\Projects\CLion\Matrix_Vector_cpp\Matrix_Vector\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/Matrix_Vector.dir/rule
 
 # Convenience name for target.
-Matrix: CMakeFiles/Matrix.dir/rule
+Matrix_Vector: CMakeFiles/Matrix_Vector.dir/rule
 
-.PHONY : Matrix
-
-# clean rule for target.
-CMakeFiles/Matrix.dir/clean:
-	$(MAKE) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/clean
-.PHONY : CMakeFiles/Matrix.dir/clean
+.PHONY : Matrix_Vector
 
 # clean rule for target.
-clean: CMakeFiles/Matrix.dir/clean
+CMakeFiles/Matrix_Vector.dir/clean:
+	$(MAKE) -f CMakeFiles\Matrix_Vector.dir\build.make CMakeFiles/Matrix_Vector.dir/clean
+.PHONY : CMakeFiles/Matrix_Vector.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Matrix_Vector.dir/clean
 
 .PHONY : clean
 

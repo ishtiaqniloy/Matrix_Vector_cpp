@@ -1,8 +1,8 @@
-# Install script for directory: D:/Drive/Projects/CLion/Matrix_Implementation_cpp/Matrix
+# Install script for directory: D:/Drive/Projects/CLion/Matrix_Vector_cpp/Matrix_Vector
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Matrix")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Matrix_Vector")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Drive/Projects/CLion/Matrix_Implementation_cpp/Matrix/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Drive/Projects/CLion/Matrix_Vector_cpp/Matrix_Vector/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

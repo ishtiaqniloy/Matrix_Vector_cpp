@@ -12,7 +12,7 @@ class Matrix{
     int m;
 
 public:
-    Matrix(int n_var, int m_var, bool initializeIdentity = false){
+    Matrix(int n_var, int m_var, bool initializeIdentity = true){
         n = n_var;
         m = m_var;
 
@@ -52,7 +52,6 @@ public:
         }
     }
 
-
     Matrix getCopy(){
         Matrix<T> result(n, m);
         for (int i = 0; i < n; i++) {
@@ -63,7 +62,17 @@ public:
         return result;
     }
 
-    void setValues(int new_n, int new_m, T** new_arr){
+    Matrix transpose(){
+        Matrix<T> result(m, n);
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                result.arr[j][i] = arr[i][j];
+            }
+        }
+        return result;
+    }
+
+    void setValues(int new_n, int new_m, T **new_arr){
         if(n!=new_n || m!=new_m){
             printf("SIZE MISMATCH!!!");
             return;
@@ -96,12 +105,33 @@ public:
 
     T getVal(int i, int j){
         if(i >= n || j >= m){
-            return;
+            return 1;
         }
         return arr[i][j];
     }
 
+    T getTrace(){
+        T val = 0;
+        for (int i = 0; i < n && i < m; i++) {
+            val += arr[i][i];
+        }
+        return val;
+    }
 
+    Matrix elementWiseProduct (Matrix const &obj) {
+        if(n != obj.n || m != obj.m){
+            printf("SIZE MISMATCH!!!");
+            exit(1);
+        }
+        Matrix<T> result(n, m);
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                result.arr[i][j] = arr[i][j] * obj.arr[i][j];
+            }
+        }
+
+        return result;
+    }
 
     Matrix operator + (Matrix const &obj) {
         if(n != obj.n || m != obj.m){
@@ -203,32 +233,6 @@ public:
         return result;
     }
 
-
-
-    Matrix elementWiseProduct (Matrix const &obj) {
-        if(n != obj.n || m != obj.m){
-            printf("SIZE MISMATCH!!!");
-            exit(1);
-        }
-        Matrix<T> result(n, m);
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                result.arr[i][j] = arr[i][j] * obj.arr[i][j];
-            }
-        }
-
-        return result;
-    }
-
-    T getTrace(){
-        T val = 0;
-        for (int i = 0; i < n && i < m; i++) {
-            val += arr[i][i];
-        }
-        return val;
-    }
-
-
     void printMatrix(){
         printf("\n");
         for (int i = 0; i < n; i++) {
@@ -253,16 +257,8 @@ public:
         return n;
     }
 
-    void setN(int n) {
-        Matrix::n = n;
-    }
-
     int getM() const {
         return m;
-    }
-
-    void setM(int m) {
-        Matrix::m = m;
     }
 
 };

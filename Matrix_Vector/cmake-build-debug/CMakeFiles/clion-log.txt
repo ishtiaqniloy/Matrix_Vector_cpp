@@ -1,0 +1,4 @@
+C:\Users\Ishti\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\191.6707.69\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\Drive\Projects\CLion\Matrix_Vector_cpp\Matrix_Vector
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Drive/Projects/CLion/Matrix_Vector_cpp/Matrix_Vector/cmake-build-debug
