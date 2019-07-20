@@ -83,7 +83,7 @@
 		<Unit filename="D:/Drive/Projects/CLion/Matrix_Vector_cpp/Matrix_Vector/Point3D.h">
 			<Option target="Matrix_Vector"/>
 		</Unit>
-		<Unit filename="D:/Drive/Projects/CLion/Matrix_Vector_cpp/Matrix_Vector/Vector.h">
+		<Unit filename="D:/Drive/Projects/CLion/Matrix_Vector_cpp/Matrix_Vector/Vector3D.h">
 			<Option target="Matrix_Vector"/>
 		</Unit>
 		<Unit filename="D:/Drive/Projects/CLion/Matrix_Vector_cpp/Matrix_Vector/main.cpp">
