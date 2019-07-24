@@ -26,6 +26,16 @@ public:
         return result;
     }
 
+    Vector3D getOppositeVector(){
+        Vector3D result;
+        result.x = -x;
+        result.y = -y;
+        result.z = -z;
+
+        return result;
+    }
+
+
     double getVal(){
         return sqrt(x*x + y*y + z*z);
     }
