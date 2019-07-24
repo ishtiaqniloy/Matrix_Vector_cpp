@@ -47,6 +47,40 @@ public:
         return result;
     }
 
+    Point3D operator + (Vector3D const &obj) {
+        Point3D result;
+        result.setX(x - obj.getX());
+        result.setY(y - obj.getY());
+        result.setZ(z - obj.getZ());
+
+        return result;
+    }
+
+    void operator = (Point3D const &obj) {
+        x = obj.x;
+        y = obj.y;
+        z = obj.z;
+
+    }
+
+    void operator = (double const &val) {
+        x = val;
+        y = val;
+        z = val;
+    }
+
+
+    Point3D getCopy(){
+        Point3D result;
+        result.x = x;
+        result.y = y;
+        result.z = z;
+
+        return result;
+    }
+
+
+
 
 };
 
