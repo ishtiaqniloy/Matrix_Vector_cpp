@@ -57,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Vector3D.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="223">
+              <caret line="134" column="16" lean-forward="true" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
               <folding>
                 <element signature="e#42#58#0" expanded="true" />
               </folding>
@@ -78,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ColorRGB.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
+            <state relative-caret-position="1105">
               <caret line="65" selection-start-line="65" selection-end-line="65" />
             </state>
           </provider>
@@ -117,6 +117,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -128,7 +129,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,7 +183,8 @@
       <workItem from="1562924309221" duration="1491000" />
       <workItem from="1563604071073" duration="1345000" />
       <workItem from="1563999145013" duration="206000" />
-      <workItem from="1564000155473" duration="19000" />
+      <workItem from="1564000155473" duration="63000" />
+      <workItem from="1564078069493" duration="357000" />
     </task>
     <task id="LOCAL-00001" summary="point getter setter added">
       <created>1563604654131</created>
@@ -199,17 +200,24 @@
       <option name="project" value="LOCAL" />
       <updated>1563999330423</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="opposite vector">
+      <created>1564000197851</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564000197851</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3061000" />
+    <option name="totallyTimeSpent" value="3462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -237,7 +245,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="point getter setter added" />
     <MESSAGE value="color" />
-    <option name="LAST_COMMIT_MESSAGE" value="color" />
+    <MESSAGE value="opposite vector" />
+    <option name="LAST_COMMIT_MESSAGE" value="opposite vector" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
@@ -269,15 +278,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ColorRGB.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
+        <state relative-caret-position="1105">
           <caret line="65" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vector3D.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="223">
+          <caret line="134" column="16" lean-forward="true" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
           <folding>
             <element signature="e#42#58#0" expanded="true" />
           </folding>

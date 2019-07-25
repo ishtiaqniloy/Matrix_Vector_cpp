@@ -129,6 +129,17 @@ double dotProduct(Vector3D a, Vector3D b){
     return a.getX()*b.getX() + a.getY()*b.getY() +a.getZ()*b.getZ();
 }
 
+
+double getRadAngleVectors(Vector3D a, Vector3D b){
+    if(a.getVal()==0 || b.getVal() == 0){
+        return -999999;
+    }
+
+    return (1.0*dotProduct(a,b)/(a.getVal(), b.getVal()));
+
+}
+
+
 Vector3D rotateVector(Vector3D v, Vector3D refer, double rotationAngle){
     Vector3D result, perp;
 
