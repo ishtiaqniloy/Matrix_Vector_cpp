@@ -13,6 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="70743c43-9762-46d1-bd38-849b8ec852bd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ColorRGB.h" beforeDir="false" afterPath="$PROJECT_DIR$/ColorRGB.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Point3D.h" beforeDir="false" afterPath="$PROJECT_DIR$/Point3D.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vector3D.h" beforeDir="false" afterPath="$PROJECT_DIR$/Vector3D.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -45,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Matrix.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4488">
-              <caret line="264" selection-start-line="6" selection-end-line="264" />
+            <state relative-caret-position="223">
+              <caret line="246" lean-forward="true" selection-start-line="246" selection-end-line="246" />
               <folding>
                 <element signature="e#49#66#0" expanded="true" />
               </folding>
@@ -54,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vector3D.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="134" column="16" lean-forward="true" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
+            <state relative-caret-position="376">
+              <caret line="92" column="56" selection-start-line="92" selection-start-column="56" selection-end-line="92" selection-end-column="56" />
               <folding>
                 <element signature="e#42#58#0" expanded="true" />
               </folding>
@@ -66,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Point3D.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+            <state relative-caret-position="427">
+              <caret line="66" column="8" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -78,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ColorRGB.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="784">
+              <caret line="77" column="26" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -98,8 +100,8 @@
         <option value="$PROJECT_DIR$/Vector.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Matrix.h" />
-        <option value="$PROJECT_DIR$/Point3D.h" />
         <option value="$PROJECT_DIR$/ColorRGB.h" />
+        <option value="$PROJECT_DIR$/Point3D.h" />
         <option value="$PROJECT_DIR$/Vector3D.h" />
       </list>
     </option>
@@ -184,7 +186,7 @@
       <workItem from="1563604071073" duration="1345000" />
       <workItem from="1563999145013" duration="206000" />
       <workItem from="1564000155473" duration="63000" />
-      <workItem from="1564078069493" duration="357000" />
+      <workItem from="1564078069493" duration="4496000" />
     </task>
     <task id="LOCAL-00001" summary="point getter setter added">
       <created>1563604654131</created>
@@ -207,11 +209,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564000197851</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="angle between vectors">
+      <created>1564078465658</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564078465658</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3462000" />
+    <option name="totallyTimeSpent" value="7601000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -246,7 +255,8 @@
     <MESSAGE value="point getter setter added" />
     <MESSAGE value="color" />
     <MESSAGE value="opposite vector" />
-    <option name="LAST_COMMIT_MESSAGE" value="opposite vector" />
+    <MESSAGE value="angle between vectors" />
+    <option name="LAST_COMMIT_MESSAGE" value="angle between vectors" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
@@ -261,35 +271,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Matrix.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4488">
-          <caret line="264" selection-start-line="6" selection-end-line="264" />
+        <state relative-caret-position="223">
+          <caret line="246" lean-forward="true" selection-start-line="246" selection-end-line="246" />
           <folding>
             <element signature="e#49#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Point3D.h">
+    <entry file="file://$PROJECT_DIR$/Vector3D.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+        <state relative-caret-position="376">
+          <caret line="92" column="56" selection-start-line="92" selection-start-column="56" selection-end-line="92" selection-end-column="56" />
+          <folding>
+            <element signature="e#42#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ColorRGB.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="784">
+          <caret line="77" column="26" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vector3D.h">
+    <entry file="file://$PROJECT_DIR$/Point3D.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="134" column="16" lean-forward="true" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
-          <folding>
-            <element signature="e#42#58#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="427">
+          <caret line="66" column="8" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="56" />
         </state>
       </provider>
     </entry>

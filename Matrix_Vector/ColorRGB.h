@@ -66,3 +66,13 @@ public:
 
 
 };
+
+
+ColorRGB white(1, 1, 1);
+ColorRGB black(0, 0, 0);
+ColorRGB red(1, 0, 0);
+ColorRGB green(0, 1, 0);
+ColorRGB blue(0, 0, 1);
+ColorRGB yellow(1, 1, 0);
+ColorRGB cyan(0, 1, 1);
+ColorRGB magenta(1, 0, 1);

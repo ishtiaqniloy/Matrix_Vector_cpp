@@ -89,6 +89,10 @@ public:
 
     }
 
+    bool operator == (Vector3D const &obj) {
+        return (x == obj.x && y == obj.y && z == obj.z);
+    }
+
     double getX() const {
         return x;
     }
@@ -114,6 +118,10 @@ public:
     }
 
 };
+
+Vector3D vecI(1, 0, 0);
+Vector3D vecJ(0, 1, 0);
+Vector3D vecK(0, 0, 1);
 
 Vector3D crossProduct(Vector3D a, Vector3D b){
     Vector3D result;

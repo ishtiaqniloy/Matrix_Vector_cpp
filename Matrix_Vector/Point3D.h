@@ -49,9 +49,9 @@ public:
 
     Point3D operator + (Vector3D const &obj) {
         Point3D result;
-        result.setX(x - obj.getX());
-        result.setY(y - obj.getY());
-        result.setZ(z - obj.getZ());
+        result.setX(x + obj.getX());
+        result.setY(y + obj.getY());
+        result.setZ(z + obj.getZ());
 
         return result;
     }
@@ -63,10 +63,21 @@ public:
 
     }
 
+    bool operator == (Point3D const &obj) {
+        return (x == obj.x && y == obj.y && z == obj.z);
+    }
+
     void operator = (double const &val) {
         x = val;
         y = val;
         z = val;
+    }
+
+    bool operator == (double const &val) {
+        if(x == val && y == val && z == val)
+            return true;
+        else
+            return false;
     }
 
 
@@ -84,3 +95,5 @@ public:
 
 };
 
+
+Point3D origin(0, 0, 0);
