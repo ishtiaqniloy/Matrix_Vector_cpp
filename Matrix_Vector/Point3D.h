@@ -63,6 +63,12 @@ public:
 
     }
 
+    void setPoint3D(Point3D newPoint){
+        x = newPoint.x;
+        y = newPoint.y;
+        z = newPoint.z;
+    }
+
     bool operator == (Point3D const &obj) {
         return (x == obj.x && y == obj.y && z == obj.z);
     }

@@ -14,6 +14,12 @@ public:
         b = varB;
     }
 
+    void setColor(ColorRGB newColor){
+        r = newColor.r;
+        g = newColor.g;
+        b = newColor.b;
+    }
+
     ColorRGB operator * (double const &val) {
         ColorRGB result;
         result.r = r * val;
